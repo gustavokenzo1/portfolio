@@ -40,23 +40,32 @@ export default function LandingPage() {
                 Olá, meu nome é Gustavo Kenzo, e esse é o meu portfólio!
               </h1>
             </div>
-            <p className="text-center md:text-left text-sm sm:text-md md:text-md lg:text-lg">
+            <p className="font-rubik text-center md:text-left text-sm sm:text-md md:text-md lg:text-lg">
               Aqui você poderá conhecer mais sobre mim, minhas experiências e
               meus projetos.
             </p>
-            <div className="flex flex-col items-center md:items-start w-full mt-8 gap-4">
+            <div className="flex flex-col items-center md:items-start w-full mt-8">
               <button
-                className="w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto"
+                className="mb-1 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative border-slate-900 dark:border-white py-2 px-4 focus:outline-none hover:bg-slate-800 dark:hover:bg-slate-200 dark:hover:text-slate-800 hover:text-slate-100 rounded-lg transition-colors duration-300"
                 onClick={() => handleNavigate("/about")}
               >
                 Sobre
               </button>
-              <button className="w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto">
+              <div className="flex-grow border-t border-slate-800 dark:border-slate-400 border-[1px] w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
+              <button
+                className="mb-1 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative border-slate-900 dark:border-white py-2 px-4 focus:outline-none hover:bg-slate-800 dark:hover:bg-slate-200 dark:hover:text-slate-800 hover:text-slate-100 rounded-lg transition-colors duration-300"
+                onClick={() => handleNavigate("/about")}
+              >
                 Experiência
               </button>
-              <button className="w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto">
+              <div className="flex-grow border-t border-slate-800 border-[1px] dark:border-slate-400 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
+              <button
+                className="mb-1 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative border-slate-900 dark:border-white py-2 px-4 focus:outline-none hover:bg-slate-800 dark:hover:bg-slate-200 dark:hover:text-slate-800 hover:text-slate-100 rounded-lg transition-colors duration-300"
+                onClick={() => handleNavigate("/about")}
+              >
                 Projetos
               </button>
+              <div className="flex-grow border-t border-slate-800 border-[1px] dark:border-slate-400 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
             </div>
           </motion.div>
         </div>
