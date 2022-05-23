@@ -1,18 +1,34 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function LandingPage() {
   const navigate = useNavigate();
+  const [exitAnimationType, setExitAnimationType] = useState({});
 
   function handleNavigate(path: string) {
     navigate(path);
+  }
+
+  function handleAnimationType(type: string) {
+    if (type === "slideToRight") {
+      setExitAnimationType({
+        x: window.innerWidth,
+        opacity: 0,
+      });
+    } else if (type === "shrink") {
+      setExitAnimationType({
+        scale: 0,
+        opacity: 0,
+      });
+    }
   }
 
   return (
     <div className="w-full flex flex-col h-screen items-center justify-center">
       <motion.div
         className="w-full flex flex-col items-center justify-center scrollbar-hide"
-        exit={{ x: window.innerWidth, opacity: 0 }}
+        exit={exitAnimationType}
         transition={{ duration: 1 }}
       >
         <div className="flex flex-col md:flex-row justify-center md:justify-around items-center w-full lg:w-3/4 h-full">
@@ -32,7 +48,6 @@ export default function LandingPage() {
             className="w-full md:w-1/2 h-1/3 p-4 flex flex-col justify-around mt-10"
             initial={{ x: "30vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            exit={{ x: "30vw", opacity: 0, transition: { duration: 1 } }}
             transition={{ type: "spring", stiffness: 50 }}
           >
             <div className="mb-4">
@@ -47,21 +62,27 @@ export default function LandingPage() {
             <div className="flex flex-col items-center md:items-start w-full mt-8">
               <button
                 className="mb-1 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative border-slate-900 dark:border-white py-2 px-4 focus:outline-none hover:bg-slate-800 dark:hover:bg-slate-200 dark:hover:text-slate-800 hover:text-slate-100 rounded-lg transition-colors duration-300"
-                onClick={() => handleNavigate("/about")}
+                onClick={() => {
+                  handleAnimationType("slideToRight");
+                  handleNavigate("/about");
+                }}
               >
                 Sobre
               </button>
               <div className="flex-grow border-t border-slate-800 dark:border-slate-400 border-[1px] w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
               <button
                 className="mb-1 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative border-slate-900 dark:border-white py-2 px-4 focus:outline-none hover:bg-slate-800 dark:hover:bg-slate-200 dark:hover:text-slate-800 hover:text-slate-100 rounded-lg transition-colors duration-300"
-                onClick={() => handleNavigate("/about")}
+                onClick={() => {
+                  handleAnimationType("shrink");
+                  handleNavigate("/experience");
+                }}
               >
                 Experiência
               </button>
               <div className="flex-grow border-t border-slate-800 border-[1px] dark:border-slate-400 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
               <button
                 className="mb-1 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative border-slate-900 dark:border-white py-2 px-4 focus:outline-none hover:bg-slate-800 dark:hover:bg-slate-200 dark:hover:text-slate-800 hover:text-slate-100 rounded-lg transition-colors duration-300"
-                onClick={() => handleNavigate("/about")}
+                onClick={() => handleNavigate("/projects")}
               >
                 Projetos
               </button>

@@ -15,7 +15,6 @@ export default function About() {
   const [years, setYears] = useState(0);
   const [programmingYears, setProgrammingYears] = useState(0);
   const [programmingMonths, setProgrammingMonths] = useState(0);
-
   const navigate = useNavigate();
 
   function getAge(dateString: Date) {
