@@ -1,11 +1,16 @@
-import LandingPage from "./components/LandingPage";
 import { FeedGet } from "./FeedGet/src/FeedGet";
+import { BrowserRouter as Router } from "react-router-dom";
+import DarkModeToggle from "./components/DarkModeToggle";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
     <>
-      <LandingPage />
-      <FeedGet apiKey="" />
+      <Router>
+        <DarkModeToggle />
+        <FeedGet apiKey="" />
+        <AnimatedRoutes />
+      </Router>
     </>
   );
 }
