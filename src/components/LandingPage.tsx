@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import profile_picture from "../assets/profile_picture.jpeg";
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -21,6 +22,11 @@ export default function LandingPage() {
         scale: 0,
         opacity: 0,
       });
+    } else if (type === "cubeOut") {
+      setExitAnimationType({
+        scale: 2,
+        opacity: 0,
+      });
     }
   }
 
@@ -39,7 +45,7 @@ export default function LandingPage() {
             transition={{ type: "spring", stiffness: 100 }}
           >
             <img
-              src="https://github.com/gustavokenzo1.png"
+              src={profile_picture}
               alt="Foto do meu rosto com fundo desfocado e escuro, utilizando roupa azul e óculos"
               className="rounded-full w-3/4 sm:w-1/2 md:w-3/4"
             />
@@ -82,7 +88,10 @@ export default function LandingPage() {
               <div className="flex-grow border-t border-slate-800 border-[1px] dark:border-slate-400 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
               <button
                 className="mb-1 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative border-slate-900 dark:border-white py-2 px-4 focus:outline-none hover:bg-slate-800 dark:hover:bg-slate-200 dark:hover:text-slate-800 hover:text-slate-100 rounded-lg transition-colors duration-300"
-                onClick={() => handleNavigate("/projects")}
+                onClick={() => {
+                  handleAnimationType("cubeOut");
+                  handleNavigate("/projects");
+                }}
               >
                 Projetos
               </button>
