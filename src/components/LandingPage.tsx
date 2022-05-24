@@ -1,6 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillMail,
+} from "react-icons/ai";
+import { IoMdCube } from "react-icons/io";
 import profile_picture from "../assets/profile_picture.jpeg";
 
 export default function LandingPage() {
@@ -96,6 +103,54 @@ export default function LandingPage() {
                 Projetos
               </button>
               <div className="flex-grow border-t border-slate-800 border-[1px] dark:border-slate-400 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
+              <div className="flex gap-6">
+                <button>
+                  <a
+                    href="https://github.com/gustavokenzo1
+                  "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiFillGithub size={32} />
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://www.linkedin.com/in/gustavo-kenzo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiFillLinkedin size={32} />
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://www.instagram.com/gustavokenzo1/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiFillInstagram size={32} />
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="mailto:gustavokenzo314@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiFillMail size={32} />
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://www.worldcubeassociation.org/persons/2015TAKE03"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <IoMdCube size={32} />
+                  </a>
+                </button>
+              </div>
             </div>
           </motion.div>
         </div>
