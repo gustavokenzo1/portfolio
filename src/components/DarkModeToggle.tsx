@@ -20,7 +20,7 @@ export default function DarkModeToggle() {
   }
 
   return (
-    <div className="absolute top-4 right-4 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2">
+    <div className="absolute z-20 top-4 right-4 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2">
       {colorTheme === "light" ? (
         <motion.button
           onClick={handleDarkModeToggle}

@@ -25,7 +25,7 @@ export default function Projects() {
       </motion.div>
       <div className="flex flex-col w-full items-center gap-4 md:p-10 mt-10">
         <motion.div
-          className="bg-slate-200 dark:bg-slate-800 shadow-2xl w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row items-center"
+          className="bg-stone-200/30 dark:bg-stone-800/30 backdrop-blur-sm shadow-2xl w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row items-center"
           initial="hidden"
           whileInView="visible"
           exit="exit"
@@ -61,7 +61,7 @@ export default function Projects() {
                 href="https://gustavokenzo1.github.io/SpaceX/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-500 dark:text-slate-300 break-words"
+                className="text-stone-500 dark:text-stone-300 break-words"
               >
                 https://gustavokenzo1.github.io/SpaceX/
               </a>
@@ -72,7 +72,7 @@ export default function Projects() {
                 href="https://github.com/gustavokenzo1/SpaceX"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-500 dark:text-slate-300 break-words"
+                className="text-stone-500 dark:text-stone-300 break-words"
               >
                 https://github.com/gustavokenzo1/SpaceX
               </a>
@@ -112,7 +112,7 @@ export default function Projects() {
           </div>
         </motion.div>
         <motion.div
-          className="bg-slate-200 text-right self-center md:self-end dark:bg-slate-800 shadow-2xl mt-10 w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row-reverse items-center"
+          className="bg-stone-200/30 text-right self-center md:self-end dark:bg-stone-800/30 backdrop-blur-sm shadow-2xl mt-10 w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row-reverse items-center"
           initial="hidden"
           whileInView="visible"
           exit="exit"
@@ -149,7 +149,7 @@ export default function Projects() {
                 href="https://nlw-return-impulse-drab.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-500 dark:text-slate-300 break-words"
+                className="text-stone-500 dark:text-stone-300 break-words"
               >
                 https://nlw-return-impulse-drab.vercel.app/
               </a>
@@ -160,7 +160,7 @@ export default function Projects() {
                 href="https://github.com/gustavokenzo1/nlw-return-impulse"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-500 dark:text-slate-300 break-words"
+                className="text-stone-500 dark:text-stone-300 break-words"
               >
                 https://github.com/gustavokenzo1/nlw-return-impulse
               </a>
@@ -206,7 +206,7 @@ export default function Projects() {
           </div>
         </motion.div>
         <motion.div
-          className="bg-slate-200 mt-10 dark:bg-slate-800 shadow-2xl w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row items-center"
+          className="bg-stone-200/30 mt-10 dark:bg-stone-800/30 backdrop-blur-sm shadow-2xl w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row items-center"
           initial="hidden"
           whileInView="visible"
           exit="exit"
@@ -242,7 +242,7 @@ export default function Projects() {
                 href="https://matriculazy.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-500 dark:text-slate-300 break-words"
+                className="text-stone-500 dark:text-stone-300 break-words"
               >
                 https://matriculazy.vercel.app/
               </a>
@@ -253,7 +253,7 @@ export default function Projects() {
                 href="https://github.com/gustavokenzo1/matriculazy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-500 dark:text-slate-300 break-words"
+                className="text-stone-500 dark:text-stone-300 break-words"
               >
                 https://github.com/gustavokenzo1/matriculazy
               </a>
@@ -306,7 +306,7 @@ export default function Projects() {
         </motion.div>
       </div>
       <motion.button
-        className="w-4/5 my-10 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto"
+        className="w-4/5 my-10 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl bg-stone-900 hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-stone-700 dark:hover:bg-stone-600 pointer-events-auto"
         onClick={() => navigate("/")}
         initial="hidden"
         whileInView="visible"

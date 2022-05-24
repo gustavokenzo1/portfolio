@@ -10,7 +10,7 @@ export default function Experience() {
     <div className="w-full flex min-h-screen flex-col items-center justify-center">
       <div className="w-full flex flex-col items-center">
         <motion.div
-          className="p-5 md:p-10 my-10 m-5 md:m-10 bg-slate-50 dark:bg-slate-800 rounded-lg shadow-2xl flex flex-col items-center"
+          className="p-5 md:p-10 my-10 m-5 md:m-10 bg-stone-50/50 dark:bg-stone-800/30 backdrop-blur-sm rounded-lg shadow-2xl flex flex-col items-center"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{
@@ -25,7 +25,7 @@ export default function Experience() {
           </h1>
           <div className="flex flex-col items-center w-full justify-center font-rubik">
             <div className="h-full">
-              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center gap-8 bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
+              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center gap-8 bg-stone-100/30 dark:bg-stone-700/30 backdrop-blur-sm shadow-lg max-w-[600px]">
                 <div>
                   <div className="mb-4 font-roboto">
                     <strong>Universidade de Brasília</strong>
@@ -40,7 +40,7 @@ export default function Experience() {
                   alt="Logo da Universidade de Brasília, azul e verde com o formato do plano piloto (avião)"
                 />
               </div>
-              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
+              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center bg-stone-100/30 dark:bg-stone-700/30 backdrop-blur-sm shadow-lg max-w-[600px]">
                 <div>
                   <div className="mb-4 font-roboto">
                     <strong>
@@ -64,7 +64,7 @@ export default function Experience() {
               Certificados
             </h1>
             <div className="h-full">
-              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center gap-8 bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
+              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center gap-8 bg-stone-100/30 dark:bg-stone-700/30 backdrop-blur-sm shadow-lg max-w-[600px]">
                 <div>
                   <div className="mb-4 font-roboto">
                     <strong>Harvard University</strong>
@@ -83,7 +83,7 @@ export default function Experience() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
+              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center bg-stone-100/30 dark:bg-stone-700/30 backdrop-blur-sm shadow-lg max-w-[600px]">
                 <div>
                   <div className="mb-4 font-roboto">
                     <strong>
@@ -108,7 +108,7 @@ export default function Experience() {
               </div>
             </div>
             <button
-              className="w-4/5 mt-10 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto"
+              className="w-4/5 mt-10 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl bg-stone-900 hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-stone-700 dark:hover:bg-stone-600 pointer-events-auto"
               onClick={() => navigate("/")}
             >
               Voltar
