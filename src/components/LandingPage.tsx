@@ -44,9 +44,9 @@ export default function LandingPage() {
         exit={exitAnimationType}
         transition={{ duration: 1 }}
       >
-        <div className="flex flex-col md:flex-row justify-center md:justify-around items-center w-full lg:w-3/4 h-full">
+        <div className="flex p-5 flex-col md:flex-row justify-around items-center w-full lg:w-3/4 h-full">
           <motion.div
-            className="flex items-center justify-center m-10"
+            className="flex items-center justify-center"
             initial={{ y: "-30vh", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 100 }}
@@ -82,7 +82,7 @@ export default function LandingPage() {
               >
                 Sobre
               </button>
-              <div className="flex-grow border-t border-slate-800 dark:border-slate-400 border-[1px] w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
+              <div className="flex-grow h-[2px] bg-slate-800 dark:bg-slate-400  w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
               <button
                 className="mb-1 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative border-slate-900 dark:border-white py-2 px-4 focus:outline-none hover:bg-slate-800 dark:hover:bg-slate-200 dark:hover:text-slate-800 hover:text-slate-100 rounded-lg transition-colors duration-300"
                 onClick={() => {
@@ -92,7 +92,7 @@ export default function LandingPage() {
               >
                 Experiência
               </button>
-              <div className="flex-grow border-t border-slate-800 border-[1px] dark:border-slate-400 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
+              <div className="flex-grow h-[2px] bg-slate-800 dark:bg-slate-400  w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
               <button
                 className="mb-1 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center md:text-left relative border-slate-900 dark:border-white py-2 px-4 focus:outline-none hover:bg-slate-800 dark:hover:bg-slate-200 dark:hover:text-slate-800 hover:text-slate-100 rounded-lg transition-colors duration-300"
                 onClick={() => {
@@ -102,8 +102,8 @@ export default function LandingPage() {
               >
                 Projetos
               </button>
-              <div className="flex-grow border-t border-slate-800 border-[1px] dark:border-slate-400 w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
-              <div className="flex gap-6">
+              <div className="flex-grow h-[2px] bg-slate-800 dark:bg-slate-400  w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 mb-8" />
+              <div className="flex gap-4 sm:gap-6 my-4">
                 <button>
                   <a
                     href="https://github.com/gustavokenzo1

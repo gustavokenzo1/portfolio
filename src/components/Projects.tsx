@@ -12,7 +12,7 @@ export default function Projects() {
       <h1 className="text-2xl md:text-4xl my-10 font-extrabold text-center">
         Projetos
       </h1>
-      <h1 className="text-xl md:text-2xl font-rubik text-center">
+      <h1 className="text-md sm:text-xl md:text-2xl font-rubik text-center mx-4">
         Aqui só serão mostrados os meus queridinhos. Ainda há diversos outros
         projetos que podem ser encontrados no meu GitHub!
       </h1>
@@ -200,7 +200,7 @@ export default function Projects() {
           </div>
         </motion.div>
         <motion.div
-          className="bg-slate-200 dark:bg-slate-800 shadow-2xl w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row items-center"
+          className="bg-slate-200 mt-10 dark:bg-slate-800 shadow-2xl w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row items-center"
           initial="hidden"
           whileInView="visible"
           exit="exit"
@@ -300,7 +300,7 @@ export default function Projects() {
         </motion.div>
       </div>
       <motion.button
-        className="w-4/5 mb-10 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto"
+        className="w-4/5 my-10 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto"
         onClick={() => navigate("/")}
         initial="hidden"
         whileInView="visible"

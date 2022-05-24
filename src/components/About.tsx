@@ -37,21 +37,21 @@ export default function About() {
   return (
     <div className="w-full flex flex-col justify-center items-center">
       <motion.div
-        className="w-4/5 p-10 m-10 bg-slate-50 dark:bg-slate-800 rounded-lg shadow-2xl flex flex-col items-center justify-around"
+        className="w-4/5 p-4 sm:p-10 m-10 bg-slate-50 dark:bg-slate-800 rounded-lg shadow-2xl flex flex-col items-center justify-around"
         initial={{ x: -window.innerWidth, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         exit={{ x: -window.innerWidth, opacity: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-2xl md:text-4xl mb-10 font-extrabold text-center">
+        <h1 className="text-2xl md:text-4xl my-10 font-extrabold text-center">
           Sobre
         </h1>
         <div className="flex flex-col items-center font-rubik">
-          <p className="text-center text-sm xs:text-md sm:text-lg md:text-2xl w-3/4">
+          <p className="text-center text-sm xs:text-md sm:text-lg md:text-2xl w-full sm:w-3/4">
             Meu nome é Gustavo Kenzo Araki Takechi, tenho {years} anos e sou
             estudante de Engenharia de Software na Universidade de Brasília.
           </p>
-          <p className="text-center text-sm xs:text-md sm:text-lg md:text-2xl w-3/4 mt-8">
+          <p className="text-center text-sm xs:text-md sm:text-lg md:text-2xl w-full sm:w-3/4 mt-8">
             Comecei no mundo da programação há exatamente {programmingYears}{" "}
             anos e {programmingMonths} meses, e hoje meu foco é desenvolver
             aplicações web e mobile, mas também sou fascinado pela área de
@@ -75,7 +75,7 @@ export default function About() {
             className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-slate-100 hover:bg-slate-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
             initial={{ y: "100px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1, ease: "easeInOut" }}
+            transition={{ delay: 1.25, duration: 1, ease: "easeInOut" }}
           >
             <SiReact className="h-8 w-8 md:h-12 md:w-12 text-center" />
             <p className="text-center text-nd mt-4">React</p>
@@ -84,7 +84,7 @@ export default function About() {
             className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-slate-100 hover:bg-slate-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
             initial={{ y: "100px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
+            transition={{ delay: 1.5, duration: 1, ease: "easeInOut" }}
           >
             <SiNodedotjs className="h-8 w-8 md:h-12 md:w-12 text-center" />
             <p className="text-center text-nd mt-4">NodeJS</p>
@@ -93,7 +93,7 @@ export default function About() {
             className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-slate-100 hover:bg-slate-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
             initial={{ y: "100px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2.5, duration: 1, ease: "easeInOut" }}
+            transition={{ delay: 1.75, duration: 1, ease: "easeInOut" }}
           >
             <SiMongodb className="h-8 w-8 md:h-12 md:w-12 text-center" />
             <p className="text-center text-nd mt-4">MongoDB</p>
@@ -107,7 +107,7 @@ export default function About() {
             className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-slate-100 hover:bg-slate-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
             initial={{ y: "100px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 3, duration: 1, ease: "easeInOut" }}
+            transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
           >
             <SiStyledcomponents className="h-8 w-8 md:h-12 md:w-12 text-center" />
             <p className="text-center text-nd mt-4">Styled Components</p>
@@ -116,7 +116,7 @@ export default function About() {
             className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-slate-100 hover:bg-slate-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
             initial={{ y: "100px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 3.5, duration: 1, ease: "easeInOut" }}
+            transition={{ delay: 2.25, duration: 1, ease: "easeInOut" }}
           >
             <SiTailwindcss className="h-8 w-8 md:h-12 md:w-12 text-center" />
             <p className="text-center text-nd mt-4">TailwindCSS</p>
@@ -125,7 +125,7 @@ export default function About() {
             className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-slate-600 dark:bg-slate-700 bg-slate-100 hover:bg-slate-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
             initial={{ y: "100px", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 4, duration: 1, ease: "easeInOut" }}
+            transition={{ delay: 2.5, duration: 1, ease: "easeInOut" }}
           >
             <SiFramer className="h-8 w-8 md:h-12 md:w-12 text-center" />
             <p className="text-center text-nd mt-4">Framer Motion</p>

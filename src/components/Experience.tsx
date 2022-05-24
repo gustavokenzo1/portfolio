@@ -25,7 +25,7 @@ export default function Experience() {
           </h1>
           <div className="flex flex-col items-center w-full justify-center font-rubik">
             <motion.div className="h-full">
-              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-center gap-8 bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
+              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center gap-8 bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
                 <div>
                   <div className="mb-4 font-roboto">
                     <strong>Universidade de Brasília</strong>
@@ -36,11 +36,11 @@ export default function Experience() {
                 </div>
                 <img
                   src={unb}
-                  className="h-10 md:h-20"
+                  className="h-10 md:h-20 self-center"
                   alt="Logo da Universidade de Brasília, azul e verde com o formato do plano piloto (avião)"
                 />
               </div>
-              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-center bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
+              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
                 <div>
                   <div className="mb-4 font-roboto">
                     <strong>
@@ -54,7 +54,7 @@ export default function Experience() {
                 </div>
                 <img
                   src={orc}
-                  className="h-20"
+                  className="h-20 mt-6 md:mt-0 self-center"
                   alt="Logo da Orc'estra Gamificação, fundo verde e uma letra O utilizando um capacete de Orc"
                 />
               </div>
