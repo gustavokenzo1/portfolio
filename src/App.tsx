@@ -3,7 +3,7 @@ import DarkModeToggle from "./components/DarkModeToggle";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 import { motion } from "framer-motion";
 
-import dark from "./assets/dark.avif";
+import dark from "./assets/dark.png";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           transition={{ duration: 1 }}
         >
           <picture>
-            <source srcSet={dark} type="image/avif" />
+            <source srcSet={dark} type="image/png" />
             <img
               src={dark}
               alt="texture"
