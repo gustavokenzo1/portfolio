@@ -134,8 +134,7 @@ export default function Projects() {
               Uma evolução de um projeto feito na Next Level Week da Rocketseat.
               Consiste em um widget de feedbacks que permite que o usuário envie
               feedbacks para o dono do projeto, com painéis de acompanhamento e
-              envio de e-mails. Aliás, caso não tenha notado, o FeedGet está
-              sendo usado agora mesmo nesse portfólio.
+              envio de e-mails.
             </p>
             <p className="text-sm sm:text-md md:text-xl font-rubik mt-8">
               Demonstração:{"  "}

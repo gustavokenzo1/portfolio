@@ -31,7 +31,7 @@ export default function LandingPage() {
       });
     } else if (type === "cubeOut") {
       setExitAnimationType({
-        scale: 2,
+        x: -window.innerWidth,
         opacity: 0,
       });
     }
@@ -69,7 +69,9 @@ export default function LandingPage() {
               </h1>
             </div>
             <p className="font-rubik text-center md:text-left text-sm sm:text-md md:text-md lg:text-lg">
-              Aqui você poderá conhecer mais sobre mim, minhas experiências e
+              Gosto de trabalhar tanto no Front-end quanto no Back-end. 
+              Porém, atualmente estou focando mais no Front-end, e
+              aqui você poderá conhecer mais sobre mim, minhas experiências e
               meus projetos.
             </p>
             <div className="flex flex-col items-center md:items-start w-full mt-8">

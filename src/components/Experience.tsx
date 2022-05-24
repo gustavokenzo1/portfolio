@@ -20,11 +20,11 @@ export default function Experience() {
           }}
           transition={{ type: "spring", stiffness: 100, duration: 2 }}
         >
-          <h1 className="text-2xl md:text-4xl mb-10 font-extrabold text-center">
+          <h1 className="text-2xl md:text-4xl mb-10 font-roboto font-extrabold text-center">
             Experiência
           </h1>
           <div className="flex flex-col items-center w-full justify-center font-rubik">
-            <motion.div className="h-full">
+            <div className="h-full">
               <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center gap-8 bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
                 <div>
                   <div className="mb-4 font-roboto">
@@ -58,7 +58,55 @@ export default function Experience() {
                   alt="Logo da Orc'estra Gamificação, fundo verde e uma letra O utilizando um capacete de Orc"
                 />
               </div>
-            </motion.div>
+            </div>
+
+            <h1 className="text-2xl md:text-4xl my-10 font-extrabold font-roboto text-center">
+              Certificados
+            </h1>
+            <div className="h-full">
+              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center gap-8 bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
+                <div>
+                  <div className="mb-4 font-roboto">
+                    <strong>Harvard University</strong>
+                    <br />
+                    (Dezembro de 2021)
+                  </div>
+                  CS50X: Introduction to Computer Science <br />
+                  <div className="mt-4 border-[1px] border-zinc-800 hover:bg-zinc-800 hover:text-zinc-100 transition-colors dark:hover:bg-zinc-100 dark:hover:text-zinc-800 dark:border-zinc-100 pl-2 py-1 rounded-xl w-[100px]">
+                    <a
+                      href="https://certificates.cs50.io/418577de-fb1a-4a19-be0f-08d12c624e89.pdf?size=letter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Certificado
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center bg-slate-100 dark:bg-slate-700 shadow-lg max-w-[600px]">
+                <div>
+                  <div className="mb-4 font-roboto">
+                    <strong>
+                      Orc'estra Gamificação
+                      <br />
+                    </strong>
+                    (Maio de 2022)
+                  </div>
+                  Trilha NodeJS: Criação de APIs RESTful
+                  <br />
+                  com Autenticação JWT
+                  <div className="mt-4 border-[1px] border-zinc-800 hover:bg-zinc-800 hover:text-zinc-100 transition-colors dark:hover:bg-zinc-100 dark:hover:text-zinc-800 dark:border-zinc-100 pl-2 py-1 rounded-xl w-[100px]">
+                    <a
+                      href="https://github.com/OrcestraGamificacao/Trilha-Back-end-05-22/tree/main/Kenzo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Certificado
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <button
               className="w-4/5 mt-10 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto"
               onClick={() => navigate("/")}
