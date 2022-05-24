@@ -9,13 +9,20 @@ export default function Projects() {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <h1 className="text-2xl md:text-4xl my-10 font-extrabold text-center">
-        Projetos
-      </h1>
-      <h1 className="text-md sm:text-xl md:text-2xl font-rubik text-center mx-4">
-        Aqui só serão mostrados os meus queridinhos. Ainda há diversos outros
-        projetos que podem ser encontrados no meu GitHub!
-      </h1>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ delay: 1, duration: 1 }}
+      >
+        <h1 className="text-2xl md:text-4xl my-10 font-extrabold text-center">
+          Projetos
+        </h1>
+        <h1 className="text-md sm:text-xl md:text-2xl font-rubik text-center mx-4">
+          Aqui só serão mostrados os meus queridinhos. Ainda há diversos outros
+          projetos que podem ser encontrados no meu GitHub!
+        </h1>
+      </motion.div>
       <div className="flex flex-col w-full items-center gap-4 md:p-10 mt-10">
         <motion.div
           className="bg-slate-200 dark:bg-slate-800 shadow-2xl w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row items-center"
