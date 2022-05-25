@@ -13,7 +13,7 @@ export default function Projects() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ delay: 1, duration: 1 }}
+        transition={{ duration: 1 }}
       >
         <h1 className="text-2xl md:text-4xl my-10 font-extrabold text-center">
           Projetos
@@ -31,15 +31,27 @@ export default function Projects() {
           exit="exit"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          variants={{
-            visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: 200 },
-            exit: {
-              opacity: 0,
-              x: 200,
-              transition: { duration: 1 },
-            },
-          }}
+          variants={
+            window.innerHeight < window.innerWidth
+              ? {
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: 200 },
+                  exit: {
+                    opacity: 0,
+                    x: 200,
+                    transition: { duration: 1 },
+                  },
+                }
+              : {
+                  visible: { opacity: 1, y: 0 },
+                  hidden: { opacity: 0, y: 200 },
+                  exit: {
+                    opacity: 0,
+                    y: 200,
+                    transition: { duration: 1 },
+                  },
+                }
+          }
         >
           <img
             src="https://raw.githubusercontent.com/gustavokenzo1/SpaceX/main/thumbnail.png"
@@ -118,15 +130,27 @@ export default function Projects() {
           exit="exit"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          variants={{
-            visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: -200 },
-            exit: {
-              opacity: 0,
-              x: -200,
-              transition: { duration: 1 },
-            },
-          }}
+          variants={
+            window.innerHeight < window.innerWidth
+              ? {
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: -200 },
+                  exit: {
+                    opacity: 0,
+                    x: -200,
+                    transition: { duration: 1 },
+                  },
+                }
+              : {
+                  visible: { opacity: 1, y: 0 },
+                  hidden: { opacity: 0, y: 200 },
+                  exit: {
+                    opacity: 0,
+                    y: 200,
+                    transition: { duration: 1 },
+                  },
+                }
+          }
         >
           <img
             src={feedget}
@@ -212,15 +236,27 @@ export default function Projects() {
           exit="exit"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          variants={{
-            visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: 200 },
-            exit: {
-              opacity: 0,
-              x: 200,
-              transition: { duration: 1 },
-            },
-          }}
+          variants={
+            window.innerHeight < window.innerWidth
+              ? {
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: 200 },
+                  exit: {
+                    opacity: 0,
+                    x: 200,
+                    transition: { duration: 1 },
+                  },
+                }
+              : {
+                  visible: { opacity: 1, y: 0 },
+                  hidden: { opacity: 0, y: 200 },
+                  exit: {
+                    opacity: 0,
+                    y: 200,
+                    transition: { duration: 1 },
+                  },
+                }
+          }
         >
           <img
             src={matriculazy}
@@ -306,7 +342,7 @@ export default function Projects() {
         </motion.div>
       </div>
       <motion.button
-        className="w-4/5 my-10 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl bg-stone-900 hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-stone-700 dark:hover:bg-stone-600 pointer-events-auto"
+        className="w-4/5 my-10 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl bg-stone-900 hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-stone-700/30 dark:hover:bg-stone-600 pointer-events-auto"
         onClick={() => navigate("/")}
         initial="hidden"
         whileInView="visible"

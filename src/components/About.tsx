@@ -61,66 +61,74 @@ export default function About() {
         <p className="font-rubik text-center mt-10 text-sm xs:text-md sm:text-lg md:text-2xl w-3/4">
           Principais tecnologias que utilizo:
         </p>
-        <div className="flex flex-col my-10 md:flex-row items-center w-1/2 md:w-4/5 lg:w-4/5 xl:w-1/2 gap-8 justify-around">
-          <motion.div
-            className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-            initial={{ y: "100px", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1, duration: 1, ease: "easeInOut" }}
-          >
-            <SiTypescript className="h-8 w-8 md:h-12 md:w-12 text-center" />
-            <p className="text-center text-nd mt-4">Typescript</p>
-          </motion.div>
-          <motion.div
-            className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-            initial={{ y: "100px", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.25, duration: 1, ease: "easeInOut" }}
-          >
-            <SiReact className="h-8 w-8 md:h-12 md:w-12 text-center" />
-            <p className="text-center text-nd mt-4">React</p>
-          </motion.div>
-          <motion.div
-            className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-            initial={{ y: "100px", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1, ease: "easeInOut" }}
-          >
-            <SiNodedotjs className="h-8 w-8 md:h-12 md:w-12 text-center" />
-            <p className="text-center text-nd mt-4">NodeJS</p>
-          </motion.div>
-          <motion.div
-            className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-            initial={{ y: "100px", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.75, duration: 1, ease: "easeInOut" }}
-          >
-            <SiMongodb className="h-8 w-8 md:h-12 md:w-12 text-center" />
-            <p className="text-center text-nd mt-4">MongoDB</p>
-          </motion.div>
+        <div className="flex flex-col my-10 md:flex-row items-center w-1/2 md:w-4/5 lg:w-4/5 xl:w-1/2 gap-4 md:gap-8 justify-around">
+          <div className="flex gap-4 md:gap-8 flex-row md:flex:col">
+            <motion.div
+              className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
+              initial={{ y: "100px", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1, duration: 1, ease: "easeInOut" }}
+            >
+              <SiTypescript className="h-8 w-8 md:h-12 md:w-12 text-center" />
+              <p className="text-center text-nd mt-4">Typescript</p>
+            </motion.div>
+            <motion.div
+              className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
+              initial={{ y: "100px", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.25, duration: 1, ease: "easeInOut" }}
+            >
+              <SiReact className="h-8 w-8 md:h-12 md:w-12 text-center" />
+              <p className="text-center text-nd mt-4">React</p>
+            </motion.div>
+          </div>
+          <div className="flex gap-4 md:gap-8 flex-row md:flex:col">
+            <motion.div
+              className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
+              initial={{ y: "100px", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.5, duration: 1, ease: "easeInOut" }}
+            >
+              <SiNodedotjs className="h-8 w-8 md:h-12 md:w-12 text-center" />
+              <p className="text-center text-nd mt-4">NodeJS</p>
+            </motion.div>
+            <motion.div
+              className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
+              initial={{ y: "100px", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.75, duration: 1, ease: "easeInOut" }}
+            >
+              <SiMongodb className="h-8 w-8 md:h-12 md:w-12 text-center" />
+              <p className="text-center text-nd mt-4">MongoDB</p>
+            </motion.div>
+          </div>
         </div>
         <p className="font-rubik text-center mt-8 text-sm xs:text-md sm:text-lg md:text-2xl w-3/4">
           Principais bibliotecas que utilizo para estilização:
         </p>
-        <div className="flex flex-col my-10 md:flex-row items-center w-1/2 md:w-4/5 lg:w-4/5 xl:w-1/2 gap-8 justify-around">
-          <motion.div
-            className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-            initial={{ y: "100px", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
-          >
-            <SiStyledcomponents className="h-8 w-8 md:h-12 md:w-12 text-center" />
-            <p className="text-center text-nd mt-4">Styled Components</p>
-          </motion.div>
-          <motion.div
-            className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-            initial={{ y: "100px", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2.25, duration: 1, ease: "easeInOut" }}
-          >
-            <SiTailwindcss className="h-8 w-8 md:h-12 md:w-12 text-center" />
-            <p className="text-center text-nd mt-4">TailwindCSS</p>
-          </motion.div>
+        <div className="flex flex-col my-10 md:flex-row items-center w-1/2 md:w-4/5 lg:w-4/5 xl:w-1/2 gap-4 md:gap-8 justify-around">
+          <div className="flex gap-4 md:gap-8 flex-row md:flex:col">
+            <motion.div
+              className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
+              initial={{ y: "100px", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
+            >
+              <SiStyledcomponents className="h-8 w-8 md:h-12 md:w-12 text-center" />
+              <p className="text-center text-sm md:text-md mt-4">
+                Styled Components
+              </p>
+            </motion.div>
+            <motion.div
+              className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
+              initial={{ y: "100px", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 2.25, duration: 1, ease: "easeInOut" }}
+            >
+              <SiTailwindcss className="h-8 w-8 md:h-12 md:w-12 text-center" />
+              <p className="text-center text-sm md:text-md mt-4">TailwindCSS</p>
+            </motion.div>
+          </div>
           <motion.div
             className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
             initial={{ y: "100px", opacity: 0 }}
@@ -128,7 +136,7 @@ export default function About() {
             transition={{ delay: 2.5, duration: 1, ease: "easeInOut" }}
           >
             <SiFramer className="h-8 w-8 md:h-12 md:w-12 text-center" />
-            <p className="text-center text-nd mt-4">Framer Motion</p>
+            <p className="text-center text-sm md:text-md mt-4">Framer Motion</p>
           </motion.div>
         </div>
         <button
