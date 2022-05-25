@@ -61,7 +61,7 @@ export default function About() {
         <p className="font-rubik text-center mt-10 text-sm xs:text-md sm:text-lg md:text-2xl w-3/4">
           Principais tecnologias que utilizo:
         </p>
-        <div className="flex flex-col my-10 md:flex-row items-center w-1/2 md:w-4/5 lg:w-4/5 xl:w-1/2 gap-4 md:gap-8 justify-around">
+        <div className="flex flex-col my-10 md:flex-row items-center w-1/2 md:w-4/5 lg:w-4/5 xl:w-1/2 gap-4 md:gap-8 justify-center">
           <div className="flex gap-4 md:gap-8 flex-row md:flex:col">
             <motion.div
               className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
@@ -106,7 +106,7 @@ export default function About() {
         <p className="font-rubik text-center mt-8 text-sm xs:text-md sm:text-lg md:text-2xl w-3/4">
           Principais bibliotecas que utilizo para estilização:
         </p>
-        <div className="flex flex-col my-10 md:flex-row items-center w-1/2 md:w-4/5 lg:w-4/5 xl:w-1/2 gap-4 md:gap-8 justify-around">
+        <div className="flex flex-col my-10 md:flex-row items-center w-1/2 md:w-4/5 lg:w-4/5 xl:w-1/2 gap-4 md:gap-8 justify-center">
           <div className="flex gap-4 md:gap-8 flex-row md:flex:col">
             <motion.div
               className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
@@ -140,7 +140,7 @@ export default function About() {
           </motion.div>
         </div>
         <button
-          className="w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl relative bg-stone-900 hover:bg-stone-700/30 backdrop-blur-sm focus:outlin/30e-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-stone-700/30 backdrop-blur-sm dark:hover:b/30g-stone-600 pointer-events-auto"
+          className="w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl relative bg-stone-900 hover:bg-stone-700/30 focus:outlin/30e-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-stone-700/30 backdrop-blur-sm dark:hover:b/30g-stone-600 pointer-events-auto"
           onClick={() => navigate("/")}
         >
           Voltar
