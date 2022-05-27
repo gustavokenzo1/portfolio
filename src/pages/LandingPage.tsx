@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   AiFillGithub,
   AiFillInstagram,
@@ -9,18 +9,10 @@ import {
 } from "react-icons/ai";
 import { IoMdCube } from "react-icons/io";
 import profile_picture from "../assets/profile_picture.webp";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function LandingPage() {
   const navigate = useNavigate();
   const [exitAnimationType, setExitAnimationType] = useState({});
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1500,
-    });
-  }, []);
 
   function handleNavigate(path: string) {
     navigate(path);
@@ -53,19 +45,39 @@ export default function LandingPage() {
         transition={{ duration: 1 }}
       >
         <div className="flex p-5 mt-10 sm:mt-0 flex-col md:flex-row justify-around items-center w-full xl:w-3/4 h-full">
-          <div
+          <motion.div
             className="flex items-center justify-center"
-            data-aos={window.innerHeight < window.innerWidth ? "fade-down" : "zoom-in"}
+            initial={
+              window.innerHeight < window.innerWidth
+                ? { y: "-30vh", opacity: 0 }
+                : { scale: 0.75, opacity: 0 }
+            }
+            animate={{ y: 0, opacity: 1, scale: 1 }}
+            transition={
+              window.innerHeight < window.innerWidth
+                ? { type: "spring", stiffness: 100 }
+                : { duration: 1 }
+            }
           >
             <img
               src={profile_picture}
               alt="Foto do meu rosto com fundo desfocado e escuro, utilizando roupa azul e óculos"
               className="rounded-full w-1/2 md:w-3/4"
             />
-          </div>
-          <div
+          </motion.div>
+          <motion.div
             className="w-full md:w-1/2 p-4 flex flex-col justify-around mt-10"
-            data-aos={window.innerHeight < window.innerWidth ? "fade-left" : "fade-up"}
+            initial={
+              window.innerHeight > window.innerWidth
+                ? { opacity: 0 }
+                : { x: "30vw", opacity: 0 }
+            }
+            animate={{ x: 0, opacity: 1 }}
+            transition={
+              window.innerHeight < window.innerWidth
+                ? { type: "spring", stiffness: 50 }
+                : { duration: 1 }
+            }
           >
             <div className="mb-4">
               <h1 className="text-center md:text-left text-lg sm:text-2xl md:text-2xl lg:text-3xl text-stone-900 tracking-tight font-extrabold dark:text-white">
@@ -157,7 +169,7 @@ export default function LandingPage() {
                 </button>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </motion.div>
     </div>
