@@ -1,9 +1,9 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import DarkModeToggle from "./components/DarkModeToggle";
-import AnimatedRoutes from "./components/AnimatedRoutes";
 import { motion } from "framer-motion";
 
-import dark from "./assets/dark.png";
+import dark from "./assets/dark.webp";
+import AnimatedRoutes from "./routes/AnimatedRoutes";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           transition={{ duration: 1 }}
         >
           <picture>
-            <source srcSet={dark} type="image/png" />
+            <source srcSet={dark} type="image/webp" />
             <img
               src={dark}
               alt="texture"

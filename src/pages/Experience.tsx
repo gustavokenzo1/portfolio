@@ -1,24 +1,25 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
-import unb from "../assets/unb.png";
-import orc from "../assets/orc.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import unb from "../assets/unb.webp";
+import orc from "../assets/orc.webp";
 
 export default function Experience() {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div className="w-full flex min-h-screen flex-col items-center justify-center">
       <div className="w-full flex flex-col items-center">
-        <motion.div
+        <div
           className="p-5 md:p-10 my-10 m-5 md:m-10 bg-stone-50/50 dark:bg-stone-800/30 backdrop-blur-sm rounded-lg shadow-2xl flex flex-col items-center"
-          initial={{ scale: 0, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          exit={{
-            scale: 0,
-            opacity: 0,
-            transition: { duration: 0.5 },
-          }}
-          transition={{ type: "spring", stiffness: 100, duration: 2 }}
+          data-aos="zoom-in"
         >
           <h1 className="text-2xl md:text-4xl mb-10 font-roboto font-extrabold text-center">
             Experiência
@@ -114,7 +115,7 @@ export default function Experience() {
               Voltar
             </button>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

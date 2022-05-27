@@ -1,20 +1,24 @@
 import { BsCheck2Circle } from "react-icons/bs";
-import feedget from "../assets/feedget.png";
-import matriculazy from "../assets/matriculazy.png";
+import feedget from "../assets/feedget.webp";
+import matriculazy from "../assets/matriculazy.webp";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Projects() {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div className="w-full flex flex-col items-center">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1 }}
-      >
+      <div data-aos="zoom-in">
         <h1 className="text-2xl md:text-4xl my-10 font-extrabold text-center">
           Projetos
         </h1>
@@ -22,35 +26,12 @@ export default function Projects() {
           Aqui só serão mostrados os meus queridinhos. Ainda há diversos outros
           projetos que podem ser encontrados no meu GitHub!
         </h1>
-      </motion.div>
+      </div>
       <div className="flex flex-col w-full items-center gap-4 md:p-10 mt-10">
-        <motion.div
+        <div
           className="bg-stone-200/30 dark:bg-stone-800/30 backdrop-blur-sm shadow-2xl w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row items-center"
-          initial="hidden"
-          whileInView="visible"
-          exit="exit"
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          variants={
-            window.innerHeight < window.innerWidth
-              ? {
-                  visible: { opacity: 1, x: 0 },
-                  hidden: { opacity: 0, x: 200 },
-                  exit: {
-                    opacity: 0,
-                    x: 200,
-                    transition: { duration: 1 },
-                  },
-                }
-              : {
-                  visible: { opacity: 1, y: 0 },
-                  hidden: { opacity: 0, y: 200 },
-                  exit: {
-                    opacity: 0,
-                    y: 200,
-                    transition: { duration: 1 },
-                  },
-                }
+          data-aos={
+            window.innerHeight < window.innerWidth ? "fade-left" : "fade-up"
           }
         >
           <img
@@ -122,34 +103,11 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="bg-stone-200/30 text-right self-center md:self-end dark:bg-stone-800/30 backdrop-blur-sm shadow-2xl mt-10 w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row-reverse items-center"
-          initial="hidden"
-          whileInView="visible"
-          exit="exit"
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          variants={
-            window.innerHeight < window.innerWidth
-              ? {
-                  visible: { opacity: 1, x: 0 },
-                  hidden: { opacity: 0, x: -200 },
-                  exit: {
-                    opacity: 0,
-                    x: -200,
-                    transition: { duration: 1 },
-                  },
-                }
-              : {
-                  visible: { opacity: 1, y: 0 },
-                  hidden: { opacity: 0, y: 200 },
-                  exit: {
-                    opacity: 0,
-                    y: 200,
-                    transition: { duration: 1 },
-                  },
-                }
+          data-aos={
+            window.innerHeight < window.innerWidth ? "fade-right" : "fade-up"
           }
         >
           <img
@@ -228,34 +186,11 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="bg-stone-200/30 mt-10 dark:bg-stone-800/30 backdrop-blur-sm shadow-2xl w-4/5 md:w-full gap-20 p-8 flex flex-col xl:flex-row items-center"
-          initial="hidden"
-          whileInView="visible"
-          exit="exit"
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          variants={
-            window.innerHeight < window.innerWidth
-              ? {
-                  visible: { opacity: 1, x: 0 },
-                  hidden: { opacity: 0, x: 200 },
-                  exit: {
-                    opacity: 0,
-                    x: 200,
-                    transition: { duration: 1 },
-                  },
-                }
-              : {
-                  visible: { opacity: 1, y: 0 },
-                  hidden: { opacity: 0, y: 200 },
-                  exit: {
-                    opacity: 0,
-                    y: 200,
-                    transition: { duration: 1 },
-                  },
-                }
+          data-aos={
+            window.innerHeight < window.innerWidth ? "fade-left" : "fade-up"
           }
         >
           <img
@@ -339,28 +274,15 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
-      <motion.button
+      <button
         className="w-4/5 my-10 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl bg-stone-900 hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-stone-700/30 dark:hover:bg-stone-600 pointer-events-auto"
         onClick={() => navigate("/")}
-        initial="hidden"
-        whileInView="visible"
-        exit="exit"
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-        variants={{
-          visible: { opacity: 1, scale: 1 },
-          hidden: { opacity: 0, scale: 0 },
-          exit: {
-            opacity: 0,
-            scale: 0,
-            transition: { duration: 1 },
-          },
-        }}
+        data-aos="zoom-in"
       >
         Voltar
-      </motion.button>
+      </button>
     </div>
   );
 }
