@@ -83,6 +83,25 @@ export default function Experience() {
                   </div>
                 </div>
               </div>
+              <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center gap-8 bg-stone-100/30 dark:bg-stone-700/30 backdrop-blur-sm shadow-lg max-w-[600px]">
+                <div>
+                  <div className="mb-4 font-roboto">
+                    <strong>Harvard University</strong>
+                    <br />
+                    (Junho de 2022)
+                  </div>
+                  CS50W: Web Programming with Python and JavaScript <br />
+                  <div className="mt-4 border-[1px] border-zinc-800 hover:bg-zinc-800 hover:text-zinc-100 transition-colors dark:hover:bg-zinc-100 dark:hover:text-zinc-800 dark:border-zinc-100 pl-2 py-1 rounded-xl w-[100px]">
+                    <a
+                      href="https://certificates.cs50.io/16d53aac-0ec9-48ca-b76c-a45a235d3e3b.pdf?size=letter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Certificado
+                    </a>
+                  </div>
+                </div>
+              </div>
               <div className="flex flex-col mb-4 p-4 sm:flex-row justify-between items-start md:items-center bg-stone-100/30 dark:bg-stone-700/30 backdrop-blur-sm shadow-lg max-w-[600px]">
                 <div>
                   <div className="mb-4 font-roboto">
