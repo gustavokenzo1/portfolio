@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import {
   SiFramer,
   SiMongodb,
@@ -9,7 +9,7 @@ import {
   SiStyledcomponents,
   SiTailwindcss,
   SiTypescript,
-} from "react-icons/si";
+} from 'react-icons/si';
 
 export default function About() {
   const [years, setYears] = useState(0);
@@ -21,17 +21,23 @@ export default function About() {
     const today = new Date();
     const birthDate = new Date(dateString);
     let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
+    let m = today.getMonth() - birthDate.getMonth();
+
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
       age--;
+      m = 12 + m;
     }
-    return { age, m };
+
+    return {
+      age,
+      m,
+    };
   }
 
   useEffect(() => {
-    setYears(getAge(new Date("2002-11-22")).age);
-    setProgrammingYears(getAge(new Date("2021-04-01")).age);
-    setProgrammingMonths(getAge(new Date("2021-04-01")).m);
+    setYears(getAge(new Date('2002-11-22')).age);
+    setProgrammingYears(getAge(new Date('2021-04-01')).age);
+    setProgrammingMonths(getAge(new Date('2021-04-01')).m);
   }, []);
 
   return (
@@ -52,7 +58,7 @@ export default function About() {
             estudante de Engenharia de Software na Universidade de Brasília.
           </p>
           <p className="text-center text-sm xs:text-md sm:text-lg md:text-2xl w-full sm:w-3/4 mt-8">
-            Comecei no mundo da programação há exatamente {programmingYears}{" "}
+            Comecei no mundo da programação há exatamente {programmingYears}{' '}
             anos e {programmingMonths} meses, e hoje meu foco é desenvolver
             aplicações web e mobile, mas também sou fascinado pela área de
             Inteligência Artificial, e sempre tento aprender algo sobre isso.
@@ -65,18 +71,18 @@ export default function About() {
           <div className="flex gap-4 md:gap-8 flex-row md:flex:col">
             <motion.div
               className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-              initial={{ y: "100px", opacity: 0 }}
+              initial={{ y: '100px', opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1, duration: 1, ease: "easeInOut" }}
+              transition={{ delay: 1, duration: 1, ease: 'easeInOut' }}
             >
               <SiTypescript className="h-8 w-8 md:h-12 md:w-12 text-center" />
               <p className="text-center text-nd mt-4">Typescript</p>
             </motion.div>
             <motion.div
               className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-              initial={{ y: "100px", opacity: 0 }}
+              initial={{ y: '100px', opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1.25, duration: 1, ease: "easeInOut" }}
+              transition={{ delay: 1.25, duration: 1, ease: 'easeInOut' }}
             >
               <SiReact className="h-8 w-8 md:h-12 md:w-12 text-center" />
               <p className="text-center text-nd mt-4">React</p>
@@ -85,18 +91,18 @@ export default function About() {
           <div className="flex gap-4 md:gap-8 flex-row md:flex:col">
             <motion.div
               className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-              initial={{ y: "100px", opacity: 0 }}
+              initial={{ y: '100px', opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1.5, duration: 1, ease: "easeInOut" }}
+              transition={{ delay: 1.5, duration: 1, ease: 'easeInOut' }}
             >
               <SiNodedotjs className="h-8 w-8 md:h-12 md:w-12 text-center" />
               <p className="text-center text-nd mt-4">NodeJS</p>
             </motion.div>
             <motion.div
               className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-              initial={{ y: "100px", opacity: 0 }}
+              initial={{ y: '100px', opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 1.75, duration: 1, ease: "easeInOut" }}
+              transition={{ delay: 1.75, duration: 1, ease: 'easeInOut' }}
             >
               <SiMongodb className="h-8 w-8 md:h-12 md:w-12 text-center" />
               <p className="text-center text-nd mt-4">MongoDB</p>
@@ -110,9 +116,9 @@ export default function About() {
           <div className="flex gap-4 md:gap-8 flex-row md:flex:col">
             <motion.div
               className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-              initial={{ y: "100px", opacity: 0 }}
+              initial={{ y: '100px', opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
+              transition={{ delay: 2, duration: 1, ease: 'easeInOut' }}
             >
               <SiStyledcomponents className="h-8 w-8 md:h-12 md:w-12 text-center" />
               <p className="text-center text-sm md:text-md mt-4">
@@ -121,9 +127,9 @@ export default function About() {
             </motion.div>
             <motion.div
               className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-              initial={{ y: "100px", opacity: 0 }}
+              initial={{ y: '100px', opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 2.25, duration: 1, ease: "easeInOut" }}
+              transition={{ delay: 2.25, duration: 1, ease: 'easeInOut' }}
             >
               <SiTailwindcss className="h-8 w-8 md:h-12 md:w-12 text-center" />
               <p className="text-center text-sm md:text-md mt-4">TailwindCSS</p>
@@ -131,9 +137,9 @@ export default function About() {
           </div>
           <motion.div
             className="flex flex-col items-center justify-center transition-colors duration-500 dark:hover:bg-stone-600 dark:bg-stone-700/30 backdrop-blur-sm bg-stone-200/30 hover:bg-stone-200 h-24 md:w-32  w-24 md:h-32  rounded-lg"
-            initial={{ y: "100px", opacity: 0 }}
+            initial={{ y: '100px', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2.5, duration: 1, ease: "easeInOut" }}
+            transition={{ delay: 2.5, duration: 1, ease: 'easeInOut' }}
           >
             <SiFramer className="h-8 w-8 md:h-12 md:w-12 text-center" />
             <p className="text-center text-sm md:text-md mt-4">Framer Motion</p>
@@ -141,7 +147,7 @@ export default function About() {
         </div>
         <button
           className="w-4/5 sm:w-1/2 md:w-3/4 xl:w-1/2 text-center text-lg md:text-xl relative bg-stone-900 hover:bg-stone-700/30 focus:outlin/30e-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2 text-white font-semibold h-12 px-6 rounded-lg dark:bg-stone-700/30 backdrop-blur-sm dark:hover:b/30g-stone-600 pointer-events-auto"
-          onClick={() => navigate("/")}
+          onClick={() => navigate('/')}
         >
           Voltar
         </button>
